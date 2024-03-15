@@ -9,7 +9,7 @@
 
 RC DropTableExecutor::execute(SQLStageEvent *sql_event)
 {
-  printf("exe  ");
+  printf("exe...");
   Stmt    *stmt    = sql_event->stmt();
   Session *session = sql_event->session_event()->session();
   ASSERT(stmt->type() == StmtType::DROP_TABLE,
